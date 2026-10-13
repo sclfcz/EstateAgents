@@ -1,0 +1,112 @@
+[
+  {
+    "query": "一个男人潜入别人的梦里偷取想法，最后陀螺一直在转",
+    "expect": "Inception",
+    "dense_rank": 1,
+    "bm25_rank": null,
+    "dense_top": [
+      "Inception (2010) 1.7445",
+      "Tuck Everlasting (1981) 1.6949",
+      "Doppelgänger (1969) 1.5032",
+      "Brainscan (1994) 1.4743",
+      "Akale (2004) 1.4535"
+    ],
+    "bm25_top": []
+  },
+  {
+    "query": "核战之后的废土上，有人开着改装卡车抢水",
+    "expect": "Mad Max: Fury Road",
+    "dense_rank": 2,
+    "bm25_rank": null,
+    "dense_top": [
+      "The Day After (1983) 2.0854",
+      "Mad Max: Fury Road (2015) 2.0627",
+      "Blast from the Past (1999) 1.9472",
+      "Fist of the North Star (1986) 1.9366",
+      "Human Highway (1982) 1.9309"
+    ],
+    "bm25_top": []
+  },
+  {
+    "query": "穷画家和富家女在撞上冰山的巨轮上相爱",
+    "expect": "Titanic",
+    "dense_rank": 4,
+    "bm25_rank": null,
+    "dense_top": [
+      "A Night to Remember (1958) 1.5107",
+      "History Is Made at Night (1937) 1.4583",
+      "Titanic (1953) 1.4416",
+      "Titanic (1997) 1.3894",
+      "The Icebreaker (2016) 1.3728"
+    ],
+    "bm25_top": []
+  },
+  {
+    "query": "小女孩的父母变成了猪，她走进神灵世界想把他们变回来",
+    "expect": "Spirited Away",
+    "dense_rank": 1,
+    "bm25_rank": null,
+    "dense_top": [
+      "Spirited Away (2001) 1.8295",
+      "My Sister, the Pig Lady (2015) 1.6714",
+      "Alice in Wonderland (1903) 1.6088",
+      "Willow (1988) 1.6046",
+      "Ishq (1997) 1.604"
+    ],
+    "bm25_top": []
+  },
+  {
+    "query": "a thief enters dreams to plant an idea and checks a spinning top",
+    "expect": "Inception",
+    "dense_rank": null,
+    "bm25_rank": 2,
+    "dense_top": [
+      "The Big Steal (1990) 0.6201",
+      "Electric Dreams (1984) 0.5905",
+      "Dreams That Money Can Buy (1947) 0.5721",
+      "A Calamitous Elopement (1908) 0.5648",
+      "Beep Prepared (1961) 0.5631"
+    ],
+    "bm25_top": [
+      "The Adventures of Tartu (1943) 38.0981",
+      "Inception (2010) 37.5171",
+      "Little Shop of Horrors (1986) 35.7917",
+      "Jetsons: The Movie (1990) 35.626",
+      "Mural (2011) 35.5268"
+    ]
+  },
+  {
+    "query": "post-apocalyptic desert convoy fighting for water",
+    "expect": "Mad Max: Fury Road",
+    "dense_rank": null,
+    "bm25_rank": null,
+    "dense_top": [
+      "The Heroes of Desert Storm (1991) 0.6209",
+      "Lawrence of Arabia (1962) 0.6134",
+      "The Flight of the Phoenix (1965) 0.5966",
+      "Desert Sands (1955) 0.5893",
+      "Sea of Sand (1958) 0.5795"
+    ],
+    "bm25_top": [
+      "Captive Women (1952) 21.2873",
+      "Executioners (1993) 19.8298",
+      "Cyborg 3: The Recycler (1994) 19.4406",
+      "Steel Dawn (1987) 19.2102",
+      "Ku! Kin-dza-dza (2013) 19.067"
+    ]
+  },
+  {
+    "query": "奥本海默组织科学家制造原子弹",
+    "expect": null,
+    "dense_rank": null,
+    "bm25_rank": null,
+    "dense_top": [
+      "The Beginning or the End (1947) 1.6535",
+      "Spontaneous Combustion (1990) 1.618",
+      "The Hundred-Year-Old Man Who Climbed Out the Window and Disappeared (2013) 1.6139",
+      "Kronos (1957) 1.6138",
+      "The Iron Curtain (1948) 1.5919"
+    ],
+    "bm25_top": []
+  }
+]

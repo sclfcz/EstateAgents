@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>模糊记忆</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:opsz,wght@9..144,560;9..144,680&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="badge" id="student-badge">学号 · 姓名</div>
+
+  <main id="stage" class="stage">
+    <header class="hero">
+      <p class="eyebrow">Wikipedia Movie Plots · 句向量检索</p>
+      <h1>模糊记忆</h1>
+      <p class="lede">不必记得片名。写一段情节、一个画面，或者一种感觉。片库 34,886 部，英文剧情，大约从 1901 年到 2017 年。</p>
+      <form id="search-form" class="search-form" autocomplete="off">
+        <label class="sr-only" for="query">电影情节</label>
+        <input id="query" name="query" maxlength="400" placeholder="" />
+        <button type="submit" id="search-button">找回</button>
+      </form>
+      <div class="chips" id="chips"></div>
+      <p class="hint" id="hint"></p>
+    </header>
+
+    <section id="status" class="status" hidden></section>
+
+    <section id="results" class="results" hidden>
+      <div class="columns">
+        <div>
+          <div class="column-head">
+            <h2>语义检索</h2>
+            <span>短句向量，分句分数相加</span>
+          </div>
+          <div id="dense-list" class="cards"></div>
+        </div>
+        <div>
+          <div class="column-head">
+            <h2>关键词检索</h2>
+            <span>BM25 · 原始问句</span>
+          </div>
+          <div id="bm25-list" class="cards"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="universe" class="universe">
+      <div class="column-head">
+        <h2>电影宇宙</h2>
+        <span id="universe-note">PCA 把 384 维句向量压到平面</span>
+      </div>
+      <div class="map-wrap">
+        <canvas id="map" width="1100" height="560"></canvas>
+        <p id="map-tip" class="map-tip">悬停查看片名。搜索之后，查询会变成图上的星。</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="/static/config.js"></script>
+  <script src="/static/app.js"></script>
+</body>
+</html>

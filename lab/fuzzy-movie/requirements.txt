@@ -1,0 +1,7 @@
+torch
+sentence-transformers>=3.0
+fastapi
+uvicorn
+scikit-learn
+numpy
+rank-bm25
